@@ -106,22 +106,35 @@
             </div>
         </div>
 
-        <!-- Bagian Kontak Form -->
-        <div class="contact-section">
-            <h2>Kontak</h2>
-            <!-- SILAKAN MASUKKAN LINK UNIQUE DARI FORMSPREE JIKA INGIN FORM AKTIF -->
-            <form action="https://formspree.io/f/LINK_FORMSPREE_ANDA" method="POST">
-                <div class="form-group">
-                    <label for="nama">Nama:</label>
-                    <input type="text" name="name" id="nama" placeholder="Nama Anda..." required>
-                </div>
-                <div class="form-group">
-                    <label for="pesan">Pesan:</label>
-                    <textarea name="message" id="pesan" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea>
-                </div>
-                <button type="submit" class="btn-submit">Kirim Pesan</button>
-            </form>
-        </div>
+        ```html
+   <!-- Bagian Kontak Form Instan -->
+   <div class="contact-section">
+       <h2>Kontak</h2>
+       <form action="https://api.web3forms.com/submit" method="POST">
+           
+           <!-- Bagian kunci rahasia otomatis (Jangan diubah) -->
+           <input type="hidden" name="access_key" value="035fa324-bd9e-436d-97e0-91da7cb87a1d">
+           
+           <!-- Bagian pengiriman email (GANTI DENGAN EMAIL ANDA) -->
+           <input type="hidden" name="to" value="elisanova2809@gmail.com">
+           <input type="hidden" name="from_name" value="Pesan dari Portofolio Elisa">
+           <input type="hidden" name="subject" value="Ada Pesan Masuk Baru!">
+
+           <div class="form-group">
+               <label for="nama">Nama:</label>
+               <input type="text" name="name" id="nama" placeholder="Nama Anda..." required>
+           </div>
+           <div class="form-group">
+               <label for="pesan">Pesan:</label>
+               <textarea name="message" id="pesan" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea>
+           </div>
+           
+           <!-- Halaman tujuan sukses setelah kirim (Kembali ke web Anda) -->
+           <input type="hidden" name="redirect" value="https://elisanova28.github.io">
+
+           <button type="submit" class="btn-submit">Kirim Pesan</button>
+       </form>
+   </div>
 
         <footer>
             <p>&copy; 2026 elisanova28. Powered by GitHub Pages.</p>
