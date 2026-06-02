@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio & CV - Elisa Nova</title>
+    <!-- Mengambil ikon media sosial gratis -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #121212; color: #ffffff; line-height: 1.6; }
+        
+        /* Navigasi / Header - Lebih Ringkas */
+        nav { background: linear-gradient(135deg, #1a0066, #4d0099); padding: 20px 10px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        nav a { color: #ffffff; text-decoration: none; margin: 0 20px; font-weight: 600; font-size: 1.1rem; opacity: 0.8; transition: 0.3s; }
+        nav a:hover, nav a.active { opacity: 1; border-bottom: 2px solid #ff66cc; padding-bottom: 5px; }
+
+        /* Container Utama */
+        .container { max-width: 600px; margin: 40px auto; padding: 0 20px; text-align: center; }
+
+        /* Hero Section */
+        .hero-title { font-size: 2.5rem; font-weight: bold; margin-bottom: 5px; }
+        .hero-subtitle { color: #ff66cc; font-size: 1.3rem; font-weight: 600; margin-bottom: 25px; }
+        
+        /* Foto Profil Lingkaran */
+        .profile-img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 4px solid #4d0099; margin-bottom: 30px; box-shadow: 0 0 20px rgba(77,0,153,0.5); }
+
+        /* Konten Tentang Saya */
+        .about-section { background-color: #1e1e1e; padding: 25px; border-radius: 12px; margin-bottom: 35px; border: 1px solid #333; text-align: left; }
+        .about-section h2 { color: #ff66cc; margin-bottom: 10px; font-size: 1.4rem; text-align: center; }
+        .about-section p { font-size: 1.05rem; color: #cccccc; text-align: justify; }
+
+        /* Proyek / Portofolio Singkat */
+        .project-card { background-color: #1e1e1e; padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 5px solid #4d0099; text-align: left; }
+        .project-card h3 { color: #ffffff; margin-bottom: 5px; }
+        .project-card p { color: #aaaaaa; font-size: 0.95rem; }
+
+        /* Sosial Media Section */
+        .social-section { margin: 40px 0; }
+        .social-section h2 { font-size: 1.8rem; margin-bottom: 20px; }
+        .social-icons { display: flex; justify-content: center; gap: 25px; margin-bottom: 40px; }
+        .social-icons a { color: #ffffff; font-size: 2.2rem; transition: transform 0.3s, color 0.3s; }
+        .social-icons a:hover { transform: scale(1.2); }
+        .social-icons .tiktok:hover { color: #ff0050; }
+        .social-icons .instagram:hover { color: #e1306c; }
+        .social-icons .whatsapp:hover { color: #25d366; }
+
+        /* Kontak Form */
+        .contact-section { background-color: #1e1e1e; padding: 25px; border-radius: 12px; border: 1px solid #333; text-align: left; }
+        .contact-section h2 { text-align: center; margin-bottom: 20px; font-size: 1.6rem; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; color: #cccccc; }
+        .form-group input, .form-group textarea { width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background-color: #2a2a2a; color: #ffffff; font-size: 1rem; }
+        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #ff66cc; }
+        .btn-submit { display: block; width: 100%; padding: 12px; background: linear-gradient(135deg, #4d0099, #ff66cc); color: white; border: none; border-radius: 6px; font-weight: bold; font-size: 1rem; cursor: pointer; transition: opacity 0.3s; }
+        .btn-submit:hover { opacity: 0.9; }
+
+        footer { margin-top: 5px; padding: 25px 0; font-size: 0.85rem; color: #666666; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi Baru: Sederhana & Bersih -->
+    <nav>
+        <a href="#" class="active">Beranda</a>
+        <a href="#">Tentang Saya</a>
+        <a href="#">CV Saya</a>
+    </nav>
+
+    <div class="container">
+        <!-- Kepala Profil -->
+        <h1 class="hero-title">Halo, Saya Elisa Nova</h1>
+        
+        <!-- Foto Profil Placeholder -->
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500" alt="Foto Elisa" class="profile-img">
+
+        <!-- Bagian Tentang Saya Langsung Tampil di Depan -->
+        <div class="about-section">
+            <h2>Tentang Saya</h2>
+            <p>Saya merupakan salah satu mahasiswa aktif Prograam Studi Sistem Informasi, Institut Pendidikan Indonesia Garut (IPI Garut) yang mempunyai keinginan untuk mengembangkan dan menambah ilmu baru di bidang IT/Teknologi, dan juga mencari wawasan dan pengalaman baru untuk persiapan menghadapi dunia kerja nanti.</p>
+        </div>
+
+        <!-- Portofolio Proyek Singkat -->
+        <div class="project-card">
+            <h3>VoliBooking Platform</h3>
+            <p>Pengembangan konsep antarmuka web untuk manajemen tim dan reservasi lapangan olahraga secara real-time.</p>
+        </div>
+        
+        <div class="project-card">
+            <h3>Analisis Kualitas Pelayanan Data Statistik pada BPS Kabupaten Garut</h3>
+            <p>Penelitian analisis website menggunakan metode WebQual 4.0 untuk mengukur kualitas layanan pada situs resmi Badan Pusat Statistik (BPS) Kabupaten Garut berdasarkan dimensi Usability, Information Quality, dan Service Interaction Quality guna mengetahui tingkat kepuasan pengguna.</p>
+        </div>
+
+        <!-- Bagian Sosial Media -->
+        <div class="social-section">
+            <h2>Temui Saya di</h2>
+            <div class="social-icons">
+                <a href="https://tiktok.com" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://whatsapp.com" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <!-- Bagian Kontak Form -->
+        <div class="contact-section">
+            <h2>Kontak</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" placeholder="Nama Anda...">
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" rows="4" placeholder="Tulis pesan Anda di sini..."></textarea>
+                </div>
+                <button type="button" class="btn-submit">Kirim Pesan</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 elisanova28. Powered by GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
