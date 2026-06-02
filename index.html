@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        /* Membuat efek transisi scroll yang mulus saat menu diklik */
+        html { scroll-behavior: smooth; }
         body { background-color: #121212; color: #ffffff; line-height: 1.6; }
         
-        /* Navigasi / Header - Lebih Ringkas */
+        /* Navigasi / Header */
         nav { background: linear-gradient(135deg, #1a0066, #4d0099); padding: 20px 10px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
         nav a { color: #ffffff; text-decoration: none; margin: 0 20px; font-weight: 600; font-size: 1.1rem; opacity: 0.8; transition: 0.3s; }
         nav a:hover, nav a.active { opacity: 1; border-bottom: 2px solid #ff66cc; padding-bottom: 5px; }
@@ -26,14 +29,14 @@
         .profile-img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 4px solid #4d0099; margin-bottom: 30px; box-shadow: 0 0 20px rgba(77,0,153,0.5); }
 
         /* Konten Tentang Saya */
-        .about-section { background-color: #1e1e1e; padding: 25px; border-radius: 12px; margin-bottom: 35px; border: 1px solid #333; text-align: left; }
+        .about-section { background-color: #1e1e1e; padding: 25px; border-radius: 12px; margin-bottom: 35px; border: 1px solid #333; text-align: left; scroll-margin-top: 90px; }
         .about-section h2 { color: #ff66cc; margin-bottom: 10px; font-size: 1.4rem; text-align: center; }
         .about-section p { font-size: 1.05rem; color: #cccccc; text-align: justify; }
 
         /* Proyek / Portofolio Singkat */
         .project-card { background-color: #1e1e1e; padding: 20px; border-radius: 12px; margin-bottom: 20px; border-left: 5px solid #4d0099; text-align: left; }
         .project-card h3 { color: #ffffff; margin-bottom: 5px; }
-        .project-card p { color: #aaaaaa; font-size: 0.95rem; }
+        .project-card p { color: #aaaaaa; font-size: 0.95rem; text-align: justify; }
 
         /* Sosial Media Section */
         .social-section { margin: 40px 0; }
@@ -60,34 +63,35 @@
 </head>
 <body>
 
-    <!-- Navigasi Baru: Sederhana & Bersih -->
+    <!-- Navigasi -->
     <nav>
         <a href="#" class="active">Beranda</a>
-        <a href="#">Tentang Saya</a>
-        <a href="#">CV Saya</a>
+        <a href="#about">Tentang Saya</a>
+        <!-- Catatan: Ganti 'CV_Elisa.pdf' di bawah ini sesuai dengan nama file CV asli yang Anda upload ke GitHub -->
+        <a href="CV_Elisa.pdf" target="_blank">CV Saya</a>
     </nav>
 
     <div class="container">
         <!-- Kepala Profil -->
-        <h1 class="hero-title">Halo, Saya Elisa Nova</h1>
+        <h1 class="hero-title">Halo, Saya Elisa</h1>
         
         <!-- Foto Profil Placeholder -->
         <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500" alt="Foto Elisa" class="profile-img">
 
-        <!-- Bagian Tentang Saya Langsung Tampil di Depan -->
-        <div class="about-section">
+        <!-- Bagian Tentang Saya -->
+        <div class="about-section" id="about">
             <h2>Tentang Saya</h2>
             <p>Saya merupakan salah satu mahasiswa aktif Prograam Studi Sistem Informasi, Institut Pendidikan Indonesia Garut (IPI Garut) yang mempunyai keinginan untuk mengembangkan dan menambah ilmu baru di bidang IT/Teknologi, dan juga mencari wawasan dan pengalaman baru untuk persiapan menghadapi dunia kerja nanti.</p>
         </div>
 
-        <!-- Portofolio Proyek Singkat -->
+        <!-- Portofolio Proyek -->
         <div class="project-card">
             <h3>VoliBooking Platform</h3>
             <p>Pengembangan konsep antarmuka web untuk manajemen tim dan reservasi lapangan olahraga secara real-time.</p>
         </div>
         
         <div class="project-card">
-            <h3>Analisis Kualitas Pelayanan Data Statistik pada BPS Kabupaten Garut</h3>
+            <h3>Analisis Kualitas Pelayanan Data Statistik BPS Garut</h3>
             <p>Penelitian analisis website menggunakan metode WebQual 4.0 untuk mengukur kualitas layanan pada situs resmi Badan Pusat Statistik (BPS) Kabupaten Garut berdasarkan dimensi Usability, Information Quality, dan Service Interaction Quality guna mengetahui tingkat kepuasan pengguna.</p>
         </div>
 
@@ -95,25 +99,27 @@
         <div class="social-section">
             <h2>Temui Saya di</h2>
             <div class="social-icons">
-                <a href="https://tiktok.com" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
-                <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://whatsapp.com" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                <!-- SILAKAN GANTI USERNAME/NOMOR DI BAWAH INI DENGAN AKUN ASLI ANDA -->
+                <a href="https://www.tiktok.com/@elnv__?_r=1&_t=ZS-96rww9u9uVQ" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/elisanovaa_?igsh=d3k1YnFoZHA0MXZk" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/6285659811134" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
 
         <!-- Bagian Kontak Form -->
         <div class="contact-section">
             <h2>Kontak</h2>
-            <form>
+            <!-- SILAKAN MASUKKAN LINK UNIQUE DARI FORMSPREE JIKA INGIN FORM AKTIF -->
+            <form action="https://formspree.io/f/LINK_FORMSPREE_ANDA" method="POST">
                 <div class="form-group">
                     <label for="nama">Nama:</label>
-                    <input type="text" id="nama" placeholder="Nama Anda...">
+                    <input type="text" name="name" id="nama" placeholder="Nama Anda..." required>
                 </div>
                 <div class="form-group">
                     <label for="pesan">Pesan:</label>
-                    <textarea id="pesan" rows="4" placeholder="Tulis pesan Anda di sini..."></textarea>
+                    <textarea name="message" id="pesan" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea>
                 </div>
-                <button type="button" class="btn-submit">Kirim Pesan</button>
+                <button type="submit" class="btn-submit">Kirim Pesan</button>
             </form>
         </div>
 
